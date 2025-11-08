@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.13)  1 NOV 2025 20:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.13)  8 NOV 2025 09:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -229,198 +229,113 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2025/02/14 v25.4 The multilingual framework for pdfLaTeX, LuaLaTeX and XeLaTeX
+\babel@savecnt=\count293
+\U@D=\dimen176
+\l@unhyphenated=\language90
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count294
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/babel-portuges/brazil.ldf
+Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
+Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
+(babel)             (\language72). Reported on input line 111.
+Package babel Info: Making " an active character on input line 143.
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count293
+\l__color_backend_stack_int=\count295
 \l__pdf_internal_box=\box56
-)
-No file conference_101719.aux.
+) (./conference_101719.aux)
 \openout1 = `conference_101719.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+
 -- Lines per column: 56 (exact).
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count294
-\scratchdimen=\dimen176
+\scratchcounter=\count296
+\scratchdimen=\dimen177
 \scratchbox=\box57
-\nofMPsegments=\count295
-\nofMParguments=\count296
+\nofMPsegments=\count297
+\nofMParguments=\count298
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count297
-\MPscratchDim=\dimen177
-\MPnumerator=\count298
-\makeMPintoPDFobject=\count299
+\MPscratchCnt=\count299
+\MPscratchDim=\dimen178
+\MPnumerator=\count300
+\makeMPintoPDFobject=\count301
 \everyMPtoPDFconversion=\toks25
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 57.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 36.
 
-/Users/leonardocipriani/Documents/dev/git/PCS5787/final-PCS5787/IEEE_Conference_Template__1_/conference_101719.tex:77: You can't use `macro parameter character #' in horizontal mode.
-l.77       -- 1. #
-                  3  (age)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+Underfull \hbox (badness 2277) in paragraph at lines 43--45
+[]\OT1/ptm/b/it/9 Index Terms\OT1/ptm/b/n/9 ---Banco de da-dos, Apren-di-zado Es-tat[]^^Pstico,
+ []
 
-/Users/leonardocipriani/Documents/dev/git/PCS5787/final-PCS5787/IEEE_Conference_Template__1_/conference_101719.tex:78: You can't use `macro parameter character #' in horizontal mode.
-l.78       -- 2. #
-                  4  (sex)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
 
-/Users/leonardocipriani/Documents/dev/git/PCS5787/final-PCS5787/IEEE_Conference_Template__1_/conference_101719.tex:79: You can't use `macro parameter character #' in horizontal mode.
-l.79       -- 3. #
-                  9  (cp)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/Users/leonardocipriani/Documents/dev/git/PCS5787/final-PCS5787/IEEE_Conference_Template__1_/conference_101719.tex:80: You can't use `macro parameter character #' in horizontal mode.
-l.80       -- 4. #
-                  10 (trestbps)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/Users/leonardocipriani/Documents/dev/git/PCS5787/final-PCS5787/IEEE_Conference_Template__1_/conference_101719.tex:81: You can't use `macro parameter character #' in horizontal mode.
-l.81       -- 5. #
-                  12 (chol)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/Users/leonardocipriani/Documents/dev/git/PCS5787/final-PCS5787/IEEE_Conference_Template__1_/conference_101719.tex:82: You can't use `macro parameter character #' in horizontal mode.
-l.82       -- 6. #
-                  16 (fbs)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/Users/leonardocipriani/Documents/dev/git/PCS5787/final-PCS5787/IEEE_Conference_Template__1_/conference_101719.tex:83: You can't use `macro parameter character #' in horizontal mode.
-l.83       -- 7. #
-                  19 (restecg)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/Users/leonardocipriani/Documents/dev/git/PCS5787/final-PCS5787/IEEE_Conference_Template__1_/conference_101719.tex:84: You can't use `macro parameter character #' in horizontal mode.
-l.84       -- 8. #
-                  32 (thalach)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/Users/leonardocipriani/Documents/dev/git/PCS5787/final-PCS5787/IEEE_Conference_Template__1_/conference_101719.tex:85: You can't use `macro parameter character #' in horizontal mode.
-l.85       -- 9. #
-                  38 (exang)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/Users/leonardocipriani/Documents/dev/git/PCS5787/final-PCS5787/IEEE_Conference_Template__1_/conference_101719.tex:86: You can't use `macro parameter character #' in horizontal mode.
-l.86       -- 10. #
-                   40 (oldpeak)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/Users/leonardocipriani/Documents/dev/git/PCS5787/final-PCS5787/IEEE_Conference_Template__1_/conference_101719.tex:87: You can't use `macro parameter character #' in horizontal mode.
-l.87       -- 11. #
-                   41 (slope)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/Users/leonardocipriani/Documents/dev/git/PCS5787/final-PCS5787/IEEE_Conference_Template__1_/conference_101719.tex:88: You can't use `macro parameter character #' in horizontal mode.
-l.88       -- 12. #
-                   44 (ca)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/Users/leonardocipriani/Documents/dev/git/PCS5787/final-PCS5787/IEEE_Conference_Template__1_/conference_101719.tex:89: You can't use `macro parameter character #' in horizontal mode.
-l.89       -- 13. #
-                   51 (thal)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/Users/leonardocipriani/Documents/dev/git/PCS5787/final-PCS5787/IEEE_Conference_Template__1_/conference_101719.tex:90: You can't use `macro parameter character #' in horizontal mode.
-l.90       -- 14. #
-                   58 (num)
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+Underfull \hbox (badness 8000) in paragraph at lines 54--55
+[]\OT1/ptm/m/n/10 Existem di-ver-sas ba-ses de da-dos dis-pon[]^^Pveis com
+ []
 
 
 
 
-LaTeX Warning: Citation `b1' on page 1 undefined on input line 130.
+LaTeX Warning: Reference `tabdescampos' on page 1 undefined on input line 90.
 
 
-LaTeX Warning: Citation `b2' on page 1 undefined on input line 131.
-
-
-LaTeX Warning: Citation `b3' on page 1 undefined on input line 132.
-
-
-LaTeX Warning: Citation `b3' on page 1 undefined on input line 132.
-
-
-LaTeX Warning: Citation `b3' on page 1 undefined on input line 132.
-
-
-LaTeX Warning: Citation `b3' on page 1 undefined on input line 133.
-
-
-LaTeX Warning: Citation `b4' on page 1 undefined on input line 141.
-
-
-LaTeX Warning: Citation `b5' on page 1 undefined on input line 142.
-
-
-LaTeX Warning: Citation `b6' on page 1 undefined on input line 147.
+Underfull \hbox (badness 1571) in paragraph at lines 104--105
+\OT1/ptm/m/n/10 Esse campo []e im-por-tante para dis-tin-guir a ori-gem
+ []
 
 
 
@@ -428,6 +343,20 @@ LaTeX Warning: Citation `b6' on page 1 undefined on input line 147.
 
 
 ]
+Underfull \hbox (badness 5147) in paragraph at lines 118--119
+\OT1/ptm/m/n/10 Indica poss[]^^Pveis dist[]urbios el[]etricos ou es-tru-tu-rais
+ []
+
+
+Underfull \hbox (badness 6927) in paragraph at lines 142--143
+\OT1/ptm/m/n/10 Avalia per-fus[]ao mioc[]ardica e presen[]a de []areas
+ []
+
+
+
+
+
+[2]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -443,7 +372,7 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-[2
+[3
 
 ] (./conference_101719.aux)
  ***********
@@ -454,23 +383,20 @@ L3 programming layer <2025-01-18>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 4203 strings out of 473190
- 65712 string characters out of 5715800
- 479801 words of memory out of 5000000
- 27422 multiletter control sequences out of 15000+600000
- 601193 words of font info for 122 fonts, out of 8000000 for 9000
+ 5833 strings out of 473190
+ 95574 string characters out of 5715800
+ 525056 words of memory out of 5000000
+ 29005 multiletter control sequences out of 15000+600000
+ 604024 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,65p,439b,304s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 59i,11n,67p,439b,308s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (2 pages, 72111 bytes).
+Output written on conference_101719.pdf (3 pages, 82769 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 45 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
