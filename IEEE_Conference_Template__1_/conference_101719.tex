@@ -7,6 +7,8 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{rotating}
+
 \usepackage[brazil]{babel}     % Traduz elementos automáticos para o português
 \usepackage{hyperref}
 
@@ -90,67 +92,9 @@ O armazenamento dos dados foi feito utilizando a solução AWS S3, que fornece u
 Não existem informações públicas ou sensíveis nos dados, portanto o acesso pode ser realizado por qualquer pessoa. Camadas de restrição de acesso não precisam ser aplicadas. 
 
 \subsection{Descrição dos Dados}
-Foi utilizada a base de dados da cidade de Cleveland, com um total de 303 registros. A base contém 14 atributos, sendo eles descritos abaixo. 
+Foi utilizada a base de dados da cidade de Cleveland, com um total de 303 registros. A base contém 14 atributos, sendo eles descritos na Tabela \ref{descricaovariaveisdominio}. 
 
-\begin{itemize}
-    \item \textbf{age}: Idade do paciente em anos. É uma variável numérica contínua que representa um dos principais fatores de risco para doenças cardíacas.
-    
-    \item \textbf{sex}: Sexo biológico do paciente, codificado como 1 = masculino e 0 = feminino. Usado para investigar diferenças de risco cardiovascular entre gêneros.
-    
-    \item \textbf{cp}: Tipo de dor torácica apresentada. Classificação:
-        \begin{itemize}
-            \item 1: Angina típica
-            \item 2: Angina atípica
-            \item 3: Dor não anginosa
-            \item 4: Assintomático
-        \end{itemize}
-        Esse campo é importante para distinguir a origem cardíaca da dor torácica.
-    
-    \item \textbf{trestbps}: Pressão arterial de repouso medida na admissão hospitalar (em mmHg). Ajuda a avaliar hipertensão e sobrecarga cardiovascular.
-    
-    \item \textbf{chol}: Nível sérico de colesterol em mg/dL. Valor elevado indica risco aumentado de aterosclerose e doença coronariana.
-    
-    \item \textbf{fbs}: Açúcar no sangue em jejum superior a 120 mg/dL (1 = verdadeiro; 0 = falso). Utilizado como indicador indireto de resistência à insulina ou diabetes.
-    
-    \item \textbf{restecg}: Resultado do eletrocardiograma de repouso:
-        \begin{itemize}
-            \item 0: Normal
-            \item 1: Anormalidade de onda ST-T (inversão de T ou elevação/depressão do segmento ST)
-            \item 2: Hipertrofia ventricular esquerda provável ou definitiva (critérios de Estes)
-        \end{itemize}
-        Indica possíveis distúrbios elétricos ou estruturais cardíacos.
-    
-    \item \textbf{thalach}: Frequência cardíaca máxima alcançada durante o teste de esforço. Um bom preditor da capacidade funcional e da resposta cardiovascular ao exercício.
-    
-    \item \textbf{exang}: Presença de angina induzida por exercício (1 = sim; 0 = não). Reflete a ocorrência de isquemia durante o esforço físico.
-    
-    \item \textbf{oldpeak}: Depressão do segmento ST induzida pelo exercício em relação ao repouso. Mede a severidade da isquemia miocárdica.
-    
-    \item \textbf{slope}: Inclinação do segmento ST no pico do exercício:
-        \begin{itemize}
-            \item 1: Ascendente
-            \item 2: Plana
-            \item 3: Descendente
-        \end{itemize}
-        Associada ao prognóstico de doença arterial coronariana.
-    
-    \item \textbf{ca}: Número de principais vasos coronarianos (0 3) visualizados por fluoroscopia. Valores mais altos indicam maior comprometimento arterial.
-    
-    \item \textbf{thal}: Resultados do teste de tálio:
-        \begin{itemize}
-            \item 3: Normal
-            \item 6: Defeito fixo
-            \item 7: Defeito reversível
-        \end{itemize}
-        Avalia perfusão miocárdica e presença de áreas isquêmicas.
-    
-    \item \textbf{num}: Diagnóstico de doença cardíaca:
-        \begin{itemize}
-            \item 0: Menos de 50\% de estreitamento do diâmetro dos vasos
-            \item 1: Mais de 50\% de estreitamento (doença significativa)
-        \end{itemize}
-        É a variável alvo (dependente) usada para identificar presença de doença coronariana.
-\end{itemize}
+
 
     
 Além disso, a base de dados foi disponibilizada na plataforma Zenodo, contendo o DOI \href{https://doi.org/10.5281/zenodo.17559614}{https://doi.org/10.5281/zenodo.17559614}.
@@ -215,7 +159,6 @@ This document is a model and instructions for \LaTeX.
 Please observe the conference page limits. 
 
 
-\section*{Referencias}
 
 \bibliographystyle{IEEEtran}
 \bibliography{ref.bib}
@@ -296,5 +239,54 @@ thal     & 3 & 164 & 55.2\% \\
 \hline
 \end{tabular} 
 \end{table}
+
+
+
+\appendixname
+\begin{sidewaystable}[h!]
+\centering
+\caption{Descrição dos Atributos do Conjunto de Dados com Domínios}
+\label{tab:descricaovariaveisdominio}
+\begin{tabular}{p{2cm} p{3cm} p{9cm} p{4cm}}
+\hline
+\textbf{Variável} & \textbf{Tipo} & \textbf{Descrição} & \textbf{Domínio} \\
+\hline
+
+age      & Numérica contínua & Idade do paciente em anos. & Não se aplica \\
+
+sex      & Categórica binária & Sexo biológico do paciente. & 1 = Masculino; 0 = Feminino \\
+
+cp       & Categórica ordinal & Tipo de dor torácica. & 
+1 = Angina típica; 2 = Angina atípica; 3 = Dor não anginosa; 4 = Assintomático \\
+
+trestbps & Numérica contínua & Pressão arterial em repouso (mmHg). & Não se aplica \\
+
+chol     & Numérica contínua & Nível sérico de colesterol (mg/dL). & Não se aplica \\
+
+fbs      & Categórica binária & Glicemia de jejum > 120 mg/dL. & 1 = Sim; 0 = Não \\
+
+restecg  & Categórica ordinal & Resultado do eletrocardiograma de repouso. & 
+0 = Normal; 1 = Alteração ST-T; 2 = Hipertrofia ventricular esquerda \\
+
+thalach  & Numérica contínua & Frequência cardíaca máxima atingida. & Não se aplica \\
+
+exang    & Categórica binária & Angina induzida por exercício. & 1 = Sim; 0 = Não \\
+
+oldpeak  & Numérica contínua & Depressão do segmento ST induzida por exercício. & Não se aplica \\
+
+slope    & Categórica ordinal & Inclinação do segmento ST no pico do exercício. & 
+1 = Ascendente; 2 = Plana; 3 = Descendente \\
+
+ca       & Numérica discreta & Número de vasos principais visualizados por fluoroscopia. & Inteiros: 0–3 \\
+
+thal     & Categórica nominal & Resultado do teste de tálio. & 
+3 = Normal; 6 = Defeito fixo; 7 = Defeito reversível \\
+
+num      & Categórica binária (alvo) & Diagnóstico de doença cardíaca. & 
+0 = Sem doença significativa; 1 = Doença > 50\% \\
+
+\hline
+\end{tabular}
+\end{sidewaystable}
 
 \end{document}
