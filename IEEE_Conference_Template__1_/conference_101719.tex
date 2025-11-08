@@ -8,6 +8,7 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage[brazil]{babel}     % Traduz elementos automáticos para o português
+\usepackage{hyperref}
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -16,7 +17,6 @@
 \title{Análise de desempenho de modelos de Aprendizado de máquina na base de dados Heart Disease*\\
 {\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
 should not be used}
-\thanks{Identify applicable funding agency here. If none, delete this.}
 }
 
 \author{\IEEEauthorblockN{Cipriani Leonardo}
@@ -26,10 +26,10 @@ São Paulo, Brasil \\
 email address or ORCID}
 \and
 \and
-\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
+\IEEEauthorblockN{Rampim Thiago}
+\IEEEauthorblockA{\textit{Universidade de Sao Paulo} \\
+\textit{Escola Politécnica}\\
+São Paulo, Brasil \\
 email address or ORCID}
 }
 
@@ -45,15 +45,16 @@ Banco de dados, Aprendizado Estatístico, doenças cardíacas
 \end{IEEEkeywords}
 
 \section{Introdução}
-As doenças cardíacas representam cerca de 32\% das mortes no Brasil \cite{}
+De acordo com o Ministério da Saúde, o infarto agudo do miocárdio é a maior causa de morte no Brasil e no mundo \cite{citegovinfarto}. A partir dos anos 60, observa-se no Brasil e no mundo, um aumento das doenças crônicas não transmissíveis. Em 2021, as doenças cronicas cardiovasculares foram responsáveis pela morte de 20,8 milhões de pessoas \cite{di2023world}. Além das vidas perdidas, essas condicoes acarretam em comorbidades que impactam fisicamente e socialmente os pacientes, comprometendo sua qualidade de vida.
 
-O objetivo do artigo é analisar a relação entre os fatores de risco associados à presença de doenças cardíacas e analisar classificadores de machine learning para realizar a identificação de doenças cardíacas. 
+O objetivo desse estudo é analisar a relação entre os fatores de risco associados à presença de doenças cardíacas, como a frequência cardíaca máxima, idade e outros. Além disso, realizar uma análise de desempenho de classificadores de machine learning para realizar a identificação de doenças cardíacas. 
+
 
 \section{Base de dados}
 
 Existem diversas bases de dados disponíveis com informações de doenças cardiovasculares. Para os propósitos apresentados neste trabalho, foi utilizada a base UCI Heart Diseases, disponível em \cite{heartdiseases}. 
 
-O conjunto de dados  formada por 4 bases de dados, sendo elas: Cleveland, Hungarian, switzerland e long Beach. São fornecidos os dados brutos e refinados, contendo ainda os metadados. 
+O conjunto de dados  formada por 4 bases de dados, sendo elas: Cleveland, Hungarian, Switzerland e Long Beach. São fornecidos os dados brutos e refinados, contendo ainda os metadados. 
 
 Cada uma das tabelas contém dados referentes a uma região. A quantidade de dados em cada uma das bases é descrita da Tabela \ref{todasbases}
 
@@ -77,17 +78,19 @@ Long Beach VA  & 200 \\
 
 Nesse conjunto de dados, para análises de dados e utilização em modelos de aprendizado de máquina, os autores sugerem que se utilize a base de dados de Cleveland, contendo o total de 303 registros.  
 
-Para a utilização adequada, seguindo os preceitos do ciclo de vida de dados, foram definidos o armazenamento e acesso conforme as seções abaixo. 
+As outras bases contém muitos dados faltantes, o que prejudicaria a confirmação ou descarte das hipoóteses levantadas. 
 
-\subsection{Armazenamento}
+Para a utilização adequada, seguindo os preceitos do ciclo de vida de dados, foram definidos o armazenamento e acesso conforme as seções a seguir. 
+
+\subsection{Armazenamento e Segurança}
 O armazenamento dos dados foi feito utilizando a solução AWS S3, que fornece um repositório de objetos. Através dessa ferramenta, define-se políticas de ciclo de vida e de privacidade dos dados. 
 
-\subsection{Segurança}
-Os dados da base orginal são públicos. Mas para o propósito acadêmico desse artigo, iremos definir regras de acesso, disponíveis na ferramenta AWS. 
 
+
+Não existem informações públicas ou sensíveis nos dados, portanto o acesso pode ser realizado por qualquer pessoa. Camadas de restrição de acesso não precisam ser aplicadas. 
 
 \subsection{Descrição dos Dados}
-Foi utilizada a base de dados da cidade de Cleveland, com um total de 303 registros. A base contém 14 atributos, sendo eles descritos na Tabela \ref{tabdescampos}
+Foi utilizada a base de dados da cidade de Cleveland, com um total de 303 registros. A base contém 14 atributos, sendo eles descritos abaixo. 
 
 \begin{itemize}
     \item \textbf{age}: Idade do paciente em anos. É uma variável numérica contínua que representa um dos principais fatores de risco para doenças cardíacas.
@@ -150,7 +153,7 @@ Foi utilizada a base de dados da cidade de Cleveland, com um total de 303 regist
 \end{itemize}
 
     
-
+Além disso, a base de dados foi disponibilizada na plataforma Zenodo, contendo o DOI \href{https://doi.org/10.5281/zenodo.17559614}{https://doi.org/10.5281/zenodo.17559614}.
 
 \section{Questões Analíticas}
 Defina questões analíticas e hipoóteses sobre os
@@ -176,6 +179,29 @@ Questões levantadas.
 Traduza as questões: em ações e procedimentos a serem
 adotados em cada uma das etapas do ciclo de vida dos
 dados: Planejamento, ..., Análise/Visualização/Publicação
+\subsection{Planejamento e Documentação}
+
+Conforme direcionado durante as aulas, foi utilizada a ferramenta DMPtool para documentar e acompanhar o desenvolvimento do projeto. 
+
+Com a catalogação na ferramenta, é gerado um DOI vinculado ao projeto. O DOI do projeto gerado foi o \href{https://doi.org/10.48321/D12DFBEE7A}{https://doi.org/10.48321/D12DFBEE7A}.
+
+\subsection{Análise dos dados}
+A análise realizada será dividida na etapa de descrição dos dados, onde descreveremos os dados numéricos e categóricos. Serão apresentadas as métricas clássicas de cada uma das variáveis. 
+
+Após a descrição, serão realizadas visualizações específicas sobre alguns conjuntos de dados buscando responder as questões analíticas. 
+
+\subsubsection{Descrição}
+
+Os atributos numéricos foram descritos e resumidos na Tabela \ref{resumenumeric}. 
+
+Já os atributos categóricos, foram descritos na Tabela \ref{resumecateg}
+
+
+\subsubsection{Visualização}
+
+
+
+\subsection{}
 
 \section{Resultados Obtidos}
 Comparação entre os modelos
@@ -189,39 +215,86 @@ This document is a model and instructions for \LaTeX.
 Please observe the conference page limits. 
 
 
-\section*{References}
+\section*{Referencias}
 
-Please number citations consecutively within brackets \cite{b1}. The 
-sentence punctuation follows the bracket \cite{b2}. Refer simply to the reference 
-number, as in \cite{b3}---do not use ``Ref. \cite{b3}'' or ``reference \cite{b3}'' except at 
-the beginning of a sentence: ``Reference \cite{b3} was the first $\ldots$''
-
-Number footnotes separately in superscripts. Place the actual footnote at 
-the bottom of the column in which it was cited. Do not put footnotes in the 
-abstract or reference list. Use letters for table footnotes.
-
-Unless there are six authors or more give all authors' names; do not use 
-``et al.''. Papers that have not been published, even if they have been 
-submitted for publication, should be cited as ``unpublished'' \cite{b4}. Papers 
-that have been accepted for publication should be cited as ``in press'' \cite{b5}. 
-Capitalize only the first word in a paper title, except for proper nouns and 
-element symbols.
-
-For papers published in translation journals, please give the English 
-citation first, followed by the original foreign-language citation \cite{b6}.
-
-\begin{thebibliography}{00}
-\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
-\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
-\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
-\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
-\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
-\bibitem{heartdiseases} A. Janosi, W. Steinbrunn, M. Pfisterer, and R. Detrano. "Heart Disease," UCI Machine Learning Repository, 1989. [Online]. Available: https://doi.org/10.24432/C52P4X.
-\end{thebibliography}
+\bibliographystyle{IEEEtran}
+\bibliography{ref.bib}
 \vspace{12pt}
-\color{red}
-IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
+
+
+\appendix
+\begin{table}[h!]
+\centering
+\caption{Resumo Estatístico das Variáveis Numéricas}
+\begin{tabular}{lcccccccc}
+\hline
+\textbf{Variável} 
+& \textbf{Contagem} 
+& \textbf{Média} 
+& \textbf{Desvio Padrão} 
+& \textbf{Mínimo} 
+& \textbf{25\%} 
+& \textbf{Mediana} 
+& \textbf{75\%} 
+& \textbf{Máximo} \\ 
+\hline
+age      & 297 & 54.54 & 9.05 & 29 & 48 & 56 & 61 & 77 \\
+sex      & 297 & 0.68 & 0.47 & 0 & 0 & 1 & 1 & 1 \\
+cp       & 297 & 3.16 & 0.96 & 1 & 3 & 3 & 4 & 4 \\
+trestbps & 297 & 131.69 & 17.76 & 94 & 120 & 130 & 140 & 200 \\
+chol     & 297 & 247.35 & 52.00 & 126 & 211 & 243 & 276 & 564 \\
+fbs      & 297 & 0.14 & 0.35 & 0 & 0 & 0 & 0 & 1 \\
+restecg  & 297 & 1.00 & 0.99 & 0 & 0 & 1 & 2 & 2 \\
+thalach  & 297 & 149.60 & 22.94 & 71 & 133 & 153 & 166 & 202 \\
+exang    & 297 & 0.33 & 0.47 & 0 & 0 & 0 & 1 & 1 \\
+oldpeak  & 297 & 1.06 & 1.17 & 0.0 & 0.0 & 0.8 & 1.6 & 6.2 \\
+slope    & 297 & 1.60 & 0.62 & 1 & 1 & 2 & 2 & 3 \\
+\hline
+\end{tabular} \label{resumenumeric}
+\end{table}
+
+
+
+\begin{table}[h!]
+\centering
+\caption{Distribuição das Variáveis Categóricas com Percentuais}
+\label{resumecateg}
+\begin{tabular}{lccc}
+\hline
+\textbf{Variável} & \textbf{Categoria} & \textbf{Frequência} & \textbf{Frequência (\%)} \\
+\hline
+sex      & 1 & 201 & 67.7\% \\
+         & 0 & 96  & 32.3\% \\
+\hline
+cp       & 4 & 142 & 47.8\% \\
+         & 3 & 83  & 27.9\% \\
+         & 2 & 49  & 16.5\% \\
+         & 1 & 23  & 7.7\%  \\
+\hline
+fbs      & 0 & 254 & 85.5\% \\
+         & 1 & 43  & 14.5\% \\
+\hline
+restecg  & 0 & 147 & 49.5\% \\
+         & 2 & 146 & 49.2\% \\
+         & 1 & 4   & 1.3\%  \\
+\hline
+exang    & 0 & 200 & 67.3\% \\
+         & 1 & 97  & 32.7\% \\
+\hline
+slope    & 1 & 139 & 46.8\% \\
+         & 2 & 137 & 46.1\% \\
+         & 3 & 21  & 7.1\%  \\
+\hline
+ca       & 0 & 174 & 58.6\% \\
+         & 1 & 65  & 21.9\% \\
+         & 2 & 38  & 12.8\% \\
+         & 3 & 20  & 6.7\%  \\
+\hline
+thal     & 3 & 164 & 55.2\% \\
+         & 7 & 115 & 38.7\% \\
+         & 6 & 18  & 6.1\%  \\
+\hline
+\end{tabular} 
+\end{table}
 
 \end{document}
