@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.13)  9 NOV 2025 11:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.13)  9 NOV 2025 18:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -447,9 +447,50 @@ Underfull \hbox (badness 1616) in paragraph at lines 141--142
 \OT1/ptm/m/n/10 vin-cu-lado ao pro-jeto. O DOI do pro-jeto ge-rado foi o
  []
 
+<imgs/age_boxplot.png, id=90, 859.2903pt x 714.7503pt>
+File: imgs/age_boxplot.png Graphic file (type png)
+<use imgs/age_boxplot.png>
+Package pdftex.def Info: imgs/age_boxplot.png  used on input line 160.
+(pdftex.def)             Requested size: 258.0pt x 214.60124pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 160--161
+ [][] 
+ []
 
 
-(./conference_101719.bbl
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+<imgs/freqmax.png, id=93, 859.2903pt x 714.7503pt>
+File: imgs/freqmax.png Graphic file (type png)
+<use imgs/freqmax.png>
+Package pdftex.def Info: imgs/freqmax.png  used on input line 169.
+(pdftex.def)             Requested size: 258.0pt x 214.60124pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 169--170
+ [][] 
+ []
+
+<imgs/correlacao.png, id=95, 591.8913pt x 523.2348pt>
+File: imgs/correlacao.png Graphic file (type png)
+<use imgs/correlacao.png>
+Package pdftex.def Info: imgs/correlacao.png  used on input line 178.
+(pdftex.def)             Requested size: 258.0pt x 228.07634pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 178--179
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:age' on page 2 undefined on input line 189.
+
+
+
+[2 <./imgs/age_boxplot.png> <./imgs/freqmax.png>] (./conference_101719.bbl
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¡ in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
@@ -467,12 +508,11 @@ Underfull \hbox (badness 4242) in paragraph at lines 24--25
  []
 
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 289--289
+Underfull \hbox (badness 10000) in paragraph at lines 316--316
 []\OT1/ptm/m/n/10 Categ[]orica bin[]aria
  []
 
@@ -491,33 +531,35 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-[3]
+[3 <./imgs/correlacao.png>]
 
 
 
-[4
-
-] (./conference_101719.aux)
+[4] (./conference_101719.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `conference_101719.out' has not changed.
-(rerunfilecheck)             Checksum: C0FD676FD1CD15DCE4430984A9043C66;2096.
+(rerunfilecheck)             Checksum: 27A2DD2458D48260EEBED33B2A174CE9;2046.
  ) 
 Here is how much of TeX's memory you used:
- 12437 strings out of 473190
- 196123 string characters out of 5715800
- 636834 words of memory out of 5000000
- 35502 multiletter control sequences out of 15000+600000
+ 12465 strings out of 473190
+ 196758 string characters out of 5715800
+ 637045 words of memory out of 5000000
+ 35528 multiletter control sequences out of 15000+600000
  600740 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,16n,79p,665b,466s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,16n,79p,665b,468s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (4 pages, 93833 bytes).
+Output written on conference_101719.pdf (4 pages, 207146 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 159 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 

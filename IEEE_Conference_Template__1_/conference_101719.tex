@@ -147,19 +147,46 @@ Após a descrição, serão realizadas visualizações específicas sobre alguns
 
 \subsubsection{Descrição}
 
-Os atributos numéricos foram descritos e resumidos na Tabela \ref{resumenumeric}. 
+Os atributos numéricos estão descritos e resumidos na Tabela \ref{resumenumeric}. 
 
-Já os atributos categóricos, foram descritos na Tabela \ref{resumecateg}
+Já os atributos categóricos, estão descritos na Tabela \ref{resumecateg}
 
 
 \subsubsection{Visualização}
+Para a hipótese da influência da idade, na presença de doenças cardíacas, foi utilizada a análise de boxplot para os dados. A Figura \ref{fig:ageinfluence} ilustra essa relação. 
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{imgs/age_boxplot.png}
+    \caption{Distribuição da variável \textit{age} (idade)}
+    \label{fig:ageinfluence}
+\end{figure}
+\pagebreak
+A relação entre a frequência máxima atingida e a presença ou ausência de doenças cardíacas, pode ser visto no $boxplot$ gerado na Figura \ref{fig:freqmax}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{imgs/freqmax.png}
+    \caption{Distribuição da variável \textit{trestbps} (frequência máxima)}
+    \label{fig:freqmax}
+\end{figure}
 
 
+Complementar às análises de boxplot, foi realizada a geração da matriz de correlação entre as variáveis. A Figura \ref{fig:correlacao} demonstra a correlação entre as variáveis. Para essa análise, a variável alvo $num$ também está contida na matriz de correlação.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{imgs/correlacao.png}
+    \caption{Matriz de correlação entre as variáveis.}
+    \label{fig:correlacao}
+\end{figure}
 
-\subsection{}
 
 \section{Resultados Obtidos}
-Comparação entre os modelos
+Comparar os resultados obtidos no modelo, com os de outros trabalhos. 
+
+Comparar e interpretar os resultados das questões analiticas. 
+
+Pela Figura \ref{fig:age}, nota-se uma idade média de 56,75 anos para a presença de doenças cardíacas e 52,64 anos para a ausência. Pode-se portanto, confirmar a primeira hipótese, de que a idade avançada contribui para doenças cardíacas.
 
 \section{Conclusão}
 Publicação: Os trabalhos devem ser disponibilizados na
@@ -174,10 +201,10 @@ Please observe the conference page limits.
 \bibliographystyle{IEEEtran}
 \bibliography{ref.bib}
 
-\pagebreak
+
 \appendix
 
-\begin{table}
+\begin{table}[!h]
 \centering
 \caption{Distribuição das Variáveis Categóricas com Percentuais}
 \label{resumecateg}
