@@ -26,6 +26,9 @@ M.~da~Saude, ``Infarto agudo do miocárdio,'' \url{https://www.gov.br/saude/pt-b
 \bibitem{di2023world}
 M.~Di~Cesare, H.~Bixby, T.~Gaziano, L.~Hadeed, C.~Kabudula, D.~V. McGhie, J.~Mwangi, B.~Pervan, P.~Perel, D.~Pi{\~n}eiro \emph{et~al.}, ``World heart report 2023: Confronting the world’s number one killer,'' \emph{World Heart Federation: Geneva, Switzerland}, 2023.
 
+\bibitem{detrano1989international}
+R.~Detrano, A.~Janosi, W.~Steinbrunn, M.~Pfisterer, J.-J. Schmid, S.~Sandhu, K.~H. Guppy, S.~Lee, and V.~Froelicher, ``International application of a new probability algorithm for the diagnosis of coronary artery disease,'' \emph{The American journal of cardiology}, vol.~64, no.~5, pp. 304--310, 1989.
+
 \bibitem{heartdiseases}
 S.~W. P.~M. Janosi, Andras and R.~Detrano, ``{Heart Disease},'' UCI Machine Learning Repository, 1989, {DOI}: https://doi.org/10.24432/C52P4X.
 

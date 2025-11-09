@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.13)  8 NOV 2025 19:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.13)  9 NOV 2025 11:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -361,11 +361,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count308
 \l__pdf_internal_box=\box57
-) (./conference_101719.aux
-
-LaTeX Warning: Label `tab:descricaovariaveisdominio' multiply defined.
-
-)
+) (./conference_101719.aux)
 \openout1 = `conference_101719.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -425,25 +421,19 @@ Underfull \hbox (badness 2277) in paragraph at lines 45--47
  []
 
 
-Underfull \hbox (badness 8000) in paragraph at lines 57--58
+Underfull \hbox (badness 8000) in paragraph at lines 61--62
 []\OT1/ptm/m/n/10 Existem di-ver-sas ba-ses de da-dos dis-pon[]^^Pveis com
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-
-
-LaTeX Warning: Reference `descricaovariaveisdominio' on page 1 undefined on input line 95.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 []\OT1/ptm/m/n/10 Al[]em disso, a base de da-dos foi dis-po-ni-bi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 \OT1/ptm/m/n/10 li-zada na pla-ta-forma Ze-nodo, con-tendo o DOI
  []
 
@@ -453,9 +443,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
 
 ]
-Underfull \hbox (badness 1616) in paragraph at lines 130--131
+Underfull \hbox (badness 1616) in paragraph at lines 141--142
 \OT1/ptm/m/n/10 vin-cu-lado ao pro-jeto. O DOI do pro-jeto ge-rado foi o
  []
+
+
 
 (./conference_101719.bbl
 Missing character: There is no Ã in font ptmr7t!
@@ -475,23 +467,14 @@ Underfull \hbox (badness 4242) in paragraph at lines 24--25
  []
 
 )
-Overfull \hbox (109.86275pt too wide) in paragraph at lines 172--197
- [][] 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--285
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 289--289
 []\OT1/ptm/m/n/10 Categ[]orica bin[]aria
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ** Conference Paper **
@@ -508,40 +491,33 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-[2]
+[3]
 
 
 
-[3
+[4
 
 ] (./conference_101719.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `conference_101719.out' has not changed.
-(rerunfilecheck)             Checksum: 07CBFAE31BE130DCC202C256437CE5FC;1939.
+(rerunfilecheck)             Checksum: C0FD676FD1CD15DCE4430984A9043C66;2096.
  ) 
 Here is how much of TeX's memory you used:
- 12435 strings out of 473190
- 196134 string characters out of 5715800
- 649823 words of memory out of 5000000
- 35503 multiletter control sequences out of 15000+600000
+ 12437 strings out of 473190
+ 196123 string characters out of 5715800
+ 636834 words of memory out of 5000000
+ 35502 multiletter control sequences out of 15000+600000
  600740 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,17n,79p,665b,541s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (3 pages, 90029 bytes).
+ 75i,16n,79p,665b,466s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on conference_101719.pdf (4 pages, 93833 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 149 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
