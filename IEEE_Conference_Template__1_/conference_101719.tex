@@ -149,7 +149,8 @@ Após a descrição, serão realizadas visualizações específicas sobre alguns
 
 Os atributos numéricos estão descritos e resumidos na Tabela \ref{resumenumeric}. 
 
-Já os atributos categóricos, estão descritos na Tabela \ref{resumecateg}
+Já os atribu
+tos categóricos, estão descritos na Tabela \ref{resumecateg}
 
 
 \subsubsection{Visualização}
@@ -319,5 +320,43 @@ num      & Categórica binária (alvo) & Diagnóstico de doença cardíaca. &
 \hline
 \end{tabular}
 \end{sidewaystable}
+
+
+\begin{table}[ht]
+\centering
+\caption{Resumo classificadores para kfold = 10}
+\label{tab:resumo_classificadores}
+\begin{tabular}{lccccccc}
+\hline
+Modelo & Min & Max & Média & Q1 & Q2 & Q3 \\
+\hline
+Logistic Regression & 0.667 & 1.000 & 0.846 & 0.800 & 0.851 & 0.893 \\
+Decision Tree       & 0.542 & 0.870 & 0.728 & 0.688 & 0.729 & 0.776 \\
+SVM                 & 0.583 & 0.708 & 0.654 & 0.625 & 0.660 & 0.694 \\
+KNN                 & 0.417 & 0.875 & 0.642 & 0.583 & 0.661 & 0.695 \\
+Naive Bayes         & 0.500 & 0.957 & 0.747 & 0.729 & 0.769 & 0.838 \\
+Random Forest       & 0.583 & 0.870 & 0.763 & 0.729 & 0.787 & 0.828 \\
+Gradient Boosting   & 0.667 & 0.913 & 0.798 & 0.758 & 0.809 & 0.865 \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{Resumo das métricas por modelo de outros trabalhos}
+\label{tab:resumo_metrica}
+\begin{tabular}{lccc}
+\hline
+\textbf{Modelo} & \textbf{Mínimo} & \textbf{Médio} & \textbf{Máximo} \\
+\hline
+Gradient Boosting & 72.38 & 81.57 & 89.74 \\
+SVM               & 55.26 & 65.78 & 76.31 \\
+Random Forest     & 71.05 & 80.26 & 88.15 \\
+Logistic Regression & 72.36 & 81.75 & 89.47 \\
+\hline
+\end{tabular}
+\end{table}
+
 
 \end{document}
