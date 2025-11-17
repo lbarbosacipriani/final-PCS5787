@@ -324,7 +324,7 @@ num      & Categórica binária (alvo) & Diagnóstico de doença cardíaca. &
 
 \begin{table}[ht]
 \centering
-\caption{Resumo classificadores para kfold = 10}
+\caption{Acurácia para classificadores para kfold = 10}
 \label{tab:resumo_classificadores}
 \begin{tabular}{lccccccc}
 \hline
@@ -357,6 +357,25 @@ Logistic Regression & 72.36 & 81.75 & 89.47 \\
 \hline
 \end{tabular}
 \end{table}
+
+
+\begin{table}[ht]
+\centering
+\caption{Medidas de performance por Modelo}
+\label{tab:performance_measures}
+\begin{tabular}{lccccc}
+\hline
+\textbf{Métrica} & \textbf{Discriminant} & \textbf{SVM} & \textbf{Tree} & \textbf{Bayes} & \textbf{Forest} \\
+\hline
+Accuracy   & 0.9901 & 0.7888 & 0.8350 & 0.9340 & 0.7657 \\
+Specificity & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+Precision  & 0.9901 & 0.7888 & 0.8350 & 0.9340 & 0.7657 \\
+Recall     & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 1.0000 \\
+F-measure  & 0.9950 & 0.8819 & 0.9101 & 0.9659 & 0.8673 \\
+\hline
+\end{tabular}
+\end{table}
+
 
 
 \end{document}
