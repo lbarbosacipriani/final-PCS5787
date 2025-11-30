@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.13)  17 NOV 2025 07:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.13)  30 NOV 2025 18:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -447,38 +447,38 @@ Underfull \hbox (badness 1616) in paragraph at lines 141--142
 \OT1/ptm/m/n/10 vin-cu-lado ao pro-jeto. O DOI do pro-jeto ge-rado foi o
  []
 
-<imgs/age_boxplot.png, id=90, 859.2903pt x 714.7503pt>
+<imgs/sexopresenca.png, id=103, 611.4042pt x 338.9463pt>
+File: imgs/sexopresenca.png Graphic file (type png)
+<use imgs/sexopresenca.png>
+Package pdftex.def Info: imgs/sexopresenca.png  used on input line 162.
+(pdftex.def)             Requested size: 258.0pt x 143.034pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 162--163
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+<imgs/age_boxplot.png, id=107, 714.7503pt x 714.7503pt>
 File: imgs/age_boxplot.png Graphic file (type png)
 <use imgs/age_boxplot.png>
-Package pdftex.def Info: imgs/age_boxplot.png  used on input line 161.
-(pdftex.def)             Requested size: 258.0pt x 214.60124pt.
+Package pdftex.def Info: imgs/age_boxplot.png  used on input line 176.
+(pdftex.def)             Requested size: 258.0pt x 258.0079pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 161--162
+Overfull \hbox (6.0pt too wide) in paragraph at lines 176--177
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-<imgs/freqmax.png, id=93, 859.2903pt x 714.7503pt>
+<imgs/freqmax.png, id=109, 859.2903pt x 714.7503pt>
 File: imgs/freqmax.png Graphic file (type png)
 <use imgs/freqmax.png>
-Package pdftex.def Info: imgs/freqmax.png  used on input line 170.
+Package pdftex.def Info: imgs/freqmax.png  used on input line 186.
 (pdftex.def)             Requested size: 258.0pt x 214.60124pt.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 170--171
- [][] 
- []
-
-<imgs/correlacao.png, id=95, 591.8913pt x 523.2348pt>
-File: imgs/correlacao.png Graphic file (type png)
-<use imgs/correlacao.png>
-Package pdftex.def Info: imgs/correlacao.png  used on input line 179.
-(pdftex.def)             Requested size: 258.0pt x 228.07634pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 179--180
+Overfull \hbox (6.0pt too wide) in paragraph at lines 186--187
  [][] 
  []
 
@@ -486,11 +486,100 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 179--180
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `fig:age' on page 2 undefined on input line 190.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[2 <./imgs/age_boxplot.png> <./imgs/freqmax.png>] (./conference_101719.bbl
+[2 <./imgs/sexopresenca.png> <./imgs/age_boxplot.png>]
+<imgs/chestpain.png, id=123, 611.4042pt x 345.4506pt>
+File: imgs/chestpain.png Graphic file (type png)
+<use imgs/chestpain.png>
+Package pdftex.def Info: imgs/chestpain.png  used on input line 197.
+(pdftex.def)             Requested size: 258.0pt x 145.77878pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 197--198
+ [][] 
+ []
+
+<imgs/ecgresult.png, id=125, 723.4227pt x 339.669pt>
+File: imgs/ecgresult.png Graphic file (type png)
+<use imgs/ecgresult.png>
+Package pdftex.def Info: imgs/ecgresult.png  used on input line 208.
+(pdftex.def)             Requested size: 258.0pt x 121.1405pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 208--209
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<imgs/oldpeak.png, id=129, 723.4227pt x 338.9463pt>
+File: imgs/oldpeak.png Graphic file (type png)
+<use imgs/oldpeak.png>
+Package pdftex.def Info: imgs/oldpeak.png  used on input line 219.
+(pdftex.def)             Requested size: 258.0pt x 120.88275pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 219--220
+ [][] 
+ []
+
+
+
+<imgs/regressaooldpeak.png, id=131, 723.4227pt x 338.9463pt>
+File: imgs/regressaooldpeak.png Graphic file (type png)
+<use imgs/regressaooldpeak.png>
+Package pdftex.def Info: imgs/regressaooldpeak.png  used on input line 228.
+(pdftex.def)             Requested size: 258.0pt x 120.88275pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 228--229
+ [][] 
+ []
+
+<imgs/correlacao.png, id=133, 560.8152pt x 492.1587pt>
+File: imgs/correlacao.png Graphic file (type png)
+<use imgs/correlacao.png>
+Package pdftex.def Info: imgs/correlacao.png  used on input line 239.
+(pdftex.def)             Requested size: 258.0pt x 226.41077pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 239--240
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[3 <./imgs/freqmax.png> <./imgs/chestpain.png> <./imgs/ecgresult.png> <./imgs/oldpeak.png> <./imgs/regressaooldpeak.png>]
+Underfull \hbox (badness 1377) in paragraph at lines 248--250
+[]\OT1/ptm/m/n/10 Foram uti-li-za-dos di-ver-sos mo-de-los de apren-di-zado de
+ []
+
+
+LaTeX Warning: Reference `fig:resumo_sens' on page 4 undefined on input line 256.
+
+
+Overfull \hbox (6.89522pt too wide) in paragraph at lines 262--275
+ [][] 
+ []
+
+
+Overfull \hbox (6.89522pt too wide) in paragraph at lines 281--294
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+
+Overfull \hbox (19.9347pt too wide) in paragraph at lines 327--338
+ [][] 
+ []
+
+(./conference_101719.bbl
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¡ in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
@@ -507,18 +596,11 @@ Underfull \hbox (badness 4242) in paragraph at lines 24--25
 \OT1/ptm/m/n/8 20do % 20miocrdio % 20ou ,[] da % 20rea % 20que % 20foi % 20obstruda.$[], 2024,
  []
 
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--317
+[4 <./imgs/correlacao.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
 []\OT1/ptm/m/n/10 Categ[]orica bin[]aria
- []
-
-
-Overfull \hbox (6.89522pt too wide) in paragraph at lines 329--342
- [][] 
  []
 
 
@@ -536,15 +618,11 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-[3 <./imgs/correlacao.png>]
+[5]
 
 
 
-[4]
-
-
-
-[5
+[6
 
 ] (./conference_101719.aux)
  ***********
@@ -555,25 +633,22 @@ L3 programming layer <2025-01-18>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `conference_101719.out' has not changed.
-(rerunfilecheck)             Checksum: 27A2DD2458D48260EEBED33B2A174CE9;2046.
+(rerunfilecheck)             Checksum: 8FC1028224FFE4B90E5EA9399223D13F;2708.
  ) 
 Here is how much of TeX's memory you used:
- 12472 strings out of 473190
- 196859 string characters out of 5715800
- 643233 words of memory out of 5000000
- 35531 multiletter control sequences out of 15000+600000
+ 12535 strings out of 473190
+ 198196 string characters out of 5715800
+ 639908 words of memory out of 5000000
+ 35581 multiletter control sequences out of 15000+600000
  600740 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,16n,79p,665b,468s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,16n,79p,665b,611s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (5 pages, 208779 bytes).
+Output written on conference_101719.pdf (6 pages, 357738 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 220 PDF objects out of 1000 (max. 8388607)
+ 182 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 185 words of extra memory for PDF output out of 10000 (max. 10000000)
 

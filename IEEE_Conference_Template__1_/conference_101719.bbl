@@ -32,4 +32,15 @@ R.~Detrano, A.~Janosi, and Steinbrunn, ``International application of a new prob
 \bibitem{heartdiseases}
 S.~W. P.~M. Janosi, Andras and R.~Detrano, ``{Heart Disease},'' UCI Machine Learning Repository, 1989, {DOI}: https://doi.org/10.24432/C52P4X.
 
+\bibitem{regitz2023gender}
+V.~Regitz-Zagrosek and C.~Gebhard, ``Gender medicine: effects of sex and gender on cardiovascular disease manifestation and outcomes,'' \emph{Nature Reviews Cardiology}, vol.~20, no.~4, pp. 236--247, 2023.
+
+\bibitem{goldman1960principles}
+\BIBentryALTinterwordspacing
+M.~Goldman, \emph{Principles of Clinical Electrocardiography}.\hskip 1em plus 0.5em minus 0.4em\relax Lange Medical Publications, 1960, no. v. 1960. [Online]. Available: \url{https://books.google.com.br/books?id=FgFiU2zq7FYC}
+\BIBentrySTDinterwordspacing
+
+\bibitem{zriqat2017comparative}
+I.~A. Zriqat, A.~M. Altamimi, and M.~Azzeh, ``A comparative study for predicting heart diseases using data mining classification methods,'' \emph{arXiv preprint arXiv:1704.02799}, 2017.
+
 \end{thebibliography}

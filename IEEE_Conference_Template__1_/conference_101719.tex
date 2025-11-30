@@ -104,10 +104,7 @@ Foi utilizada a base de dados da cidade de Cleveland, com um total de 303 regist
 Além disso, a base de dados foi disponibilizada na plataforma Zenodo, contendo o DOI \href{https://doi.org/10.5281/zenodo.17559614}{https://doi.org/10.5281/zenodo.17559614}.
 
 \section{Questões Analíticas}
-Defina questões analíticas e hipoóteses sobre os
-Datasets: técnicas estatísticas aplicadas à seleção e
-definição de dados a serem aplicados em experimentos
-computacionais.
+
 
 As primeiras questões a serem respondidas, serão relacionadas a presença ou ausência de doença cardíaca. A variável $num$ será utiliada para partição dos dados. 
 
@@ -134,6 +131,9 @@ Além dessas questões analíticas, foram desenvolvidos modelos de aprendizado d
 Traduza as questões: em ações e procedimentos a serem
 adotados em cada uma das etapas do ciclo de vida dos
 dados: Planejamento, ..., Análise/Visualização/Publicação
+
+A metodologia utilizada, segue o ciclo de vida dos dados, considerando as etapas de planejamento, coleta, processamento, análise e visualização dos dados. Através dessas etapas, busca-se responder as questões analíticas levantadas e avaliar o desempenho de modelos de aprendizado de máquina.
+
 \subsection{Planejamento e Documentação}
 
 Conforme direcionado durante as aulas, foi utilizada a ferramenta DMPtool para documentar e acompanhar o desenvolvimento do projeto. 
@@ -154,15 +154,31 @@ tos categóricos, estão descritos na Tabela \ref{resumecateg}
 
 
 \subsubsection{Visualização}
+
+Uma das hipoteses levantadas, é a influência do sexo biológico na presença de doenças cardíacas. A Figura \ref{fig:sexinfluence} ilustra essa relação.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{imgs/sexopresenca.png}
+    \caption{Distribuição da variável \textit{sex} (sexo biológico)}
+    \label{fig:sexinfluence}
+\end{figure}    
+
+De posse dessa visualização, é possível observar que a presença de doenças cardíacas é maior em pacientes do sexo masculino. O que corrobora com estudos epidemiológicos que indicam maior prevalência de doenças cardíacas em homens \cite{regitz2023gender}.
+
 Para a hipótese da influência da idade, na presença de doenças cardíacas, foi utilizada a análise de boxplot para os dados. A Figura \ref{fig:ageinfluence} ilustra essa relação. 
+
+Foi partida a análise entre os sexos, para observar se há diferença na influência da idade entre homens e mulheres. Nota-se uma presença maior de doenças cardíacas em pacientes mais velhos, tanto no sexo masculino quanto no feminino. Ou seja, a idade tem uma influência direta na presença de doenças cardíacas.
+
 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.5\textwidth]{imgs/age_boxplot.png}
-    \caption{Distribuição da variável \textit{age} (idade)}
+    \caption{Distribuição da variável \textit{age} (idade) por sexo.}
     \label{fig:ageinfluence}
 \end{figure}
-\pagebreak
+
+
 A relação entre a frequência máxima atingida e a presença ou ausência de doenças cardíacas, pode ser visto no $boxplot$ gerado na Figura \ref{fig:freqmax}
 
 \begin{figure}[!h]
@@ -172,8 +188,52 @@ A relação entre a frequência máxima atingida e a presença ou ausência de d
     \label{fig:freqmax}
 \end{figure}
 
+\pagebreak
+
+A relação entre o tipo de dor torácica e a presença ou ausência de doenças cardíacas, pode ser visto no gráfico de barras gerado na Figura \ref{fig:chestpain}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{imgs/chestpain.png}
+    \caption{Distribuição da variável \textit{cp} (tipo de dor torácica)}
+    \label{fig:chestpain}
+\end{figure}
+
+A dominância de dor do tipo 4 (assintomático) em pacientes com doenças cardíacas, pode indicar que a ausência de sintomas não é um indicativo confiável para descartar a presença de doenças cardíacas.
+
+A análise de resultado do ECG de repouso, pode ser vista na Figura \ref{fig:restecg}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{imgs/ecgresult.png}
+    \caption{Distribuição da variável \textit{restecg} (resultado do ECG de repouso)}
+    \label{fig:restecg}
+\end{figure}
+
+Ao observar a Figura \ref{fig:restecg}, nota-se que o resultado 1, que indica alteração do segmento ST-T, está mais presente em pacientes com doenças cardíacas. Isso está alinhado com a literatura médica, que associa alterações no segmento ST-T a condições cardíacas, como isquemia e infarto do miocárdio \cite{goldman1960principles}.
+
+Para a relação entre a deformação do segmento ST (oldpeak) e a presença ou ausência de doenças cardíacas, foi realizada uma primeira análise considerando a deformação do segmento ST-T e o percentual de valores com e sem doenças cardíacas. A Figura \ref{fig:oldpeak} ilustra essa relação. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imgs/oldpeak.png}
+    \caption{Distribuição da variável \textit{oldpeak} (deformação do segmento ST)}
+    \label{fig:oldpeak}
+\end{figure}
+
+À partir dessas informações, foi desenvolvido um modelo de regressão linear para avaliar a relação entre a deformação do segmento ST e a presença de doenças cardíacas. O modelo indicou uma correlação positiva entre o aumento da deformação do segmento ST e a presença de doenças cardíacas, sugerindo que pacientes com maior deformação têm maior probabilidade de apresentar condições cardíacas. A Figura \ref{fig:regoldpeak} ilustra o modelo de regressão linear desenvolvido e os dados observados.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imgs/regressaooldpeak.png}
+    \caption{Modelo de regressão linear entre a variável \textit{oldpeak} e a presença de doenças cardíacas.}
+    \label{fig:regoldpeak}
+\end{figure}
+
+
 
 Complementar às análises de boxplot, foi realizada a geração da matriz de correlação entre as variáveis. A Figura \ref{fig:correlacao} demonstra a correlação entre as variáveis. Para essa análise, a variável alvo $num$ também está contida na matriz de correlação.
+
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.5\textwidth]{imgs/correlacao.png}
@@ -182,12 +242,103 @@ Complementar às análises de boxplot, foi realizada a geração da matriz de co
 \end{figure}
 
 
+Pode-se observar uma correlação negativa entre idade (age) e thalach (frequência cardíaca máxima), indicando que pacientes mais velhos tendem a ter uma frequência cardíaca máxima menor. ALém disso, a correlação negetaiva entre oldpeak (deformação do segmento ST) e thalach sugere que pacientes com maior deformação do segmento ST tendem a ter uma frequência cardíaca máxima menor.
+
+\subsection{Modelos de Aprendizado de Máquina}
+Foram utilizados diversos modelos de aprendizado de máquina para classificação binária, buscando identificar a presença ou ausência de doenças cardíacas. Os modelos utilizados foram: Regressão Logística, Árvore de Decisão, SVM, KNN, Naive Bayes, Random Forest e Gradient Boosting.
+A avaliação dos modelos foi realizada utilizando a técnica de validação cruzada k-fold, com k=10. As métricas utilizadas para avaliação foram Acurácia e Recall
+
 \section{Resultados Obtidos}
 Comparar os resultados obtidos no modelo, com os de outros trabalhos. 
 
-Comparar e interpretar os resultados das questões analiticas. 
+\subsection{Modelos desenvolvidos}
 
-Pela Figura \ref{fig:age}, nota-se uma idade média de 56,75 anos para a presença de doenças cardíacas e 52,64 anos para a ausência. Pode-se portanto, confirmar a primeira hipótese, de que a idade avançada contribui para doenças cardíacas.
+Os resultados obtidos para cada modelo estão resumidos na Tabela \ref{tab:resumo_classificadores} referente a acurácia e na Tabela \ref{fig:resumo_sens}.
+
+\begin{table}[ht]
+\centering
+\caption{Acurácia para classificadores para kfold = 10}
+\label{tab:resumo_classificadores}
+\begin{tabular}{lccccccc}
+\hline
+Modelo & Min & Max & Média & Q1 & Q2 & Q3 \\
+\hline
+Logistic Regression & 0.667 & 1.000 & 0.846 & 0.800 & 0.851 & 0.893 \\
+Decision Tree       & 0.542 & 0.870 & 0.728 & 0.688 & 0.729 & 0.776 \\
+SVM                 & 0.583 & 0.708 & 0.654 & 0.625 & 0.660 & 0.694 \\
+KNN                 & 0.417 & 0.875 & 0.642 & 0.583 & 0.661 & 0.695 \\
+Naive Bayes         & 0.500 & 0.957 & 0.747 & 0.729 & 0.769 & 0.838 \\
+Random Forest       & 0.583 & 0.870 & 0.763 & 0.729 & 0.787 & 0.828 \\
+Gradient Boosting   & 0.667 & 0.913 & 0.798 & 0.758 & 0.809 & 0.865 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\caption{Sensibilidade para classificadores para kfold = 10}
+\label{tab:resumo_sens}
+\begin{tabular}{lccccccc}
+\hline
+Modelo & Min & Max & Média & Q1 & Q2 & Q3 \\
+\hline
+Logistic Regression & 0.685 & 1.000 & 0.849 & 0.792 & 0.871 & 0.914 \\
+Decision Tree       & 0.458 & 0.871 & 0.716 & 0.657 & 0.757 & 0.789 \\
+SVM                 & 0.557 & 0.708 & 0.656 & 0.610 & 0.669 & 0.696 \\
+KNN                 & 0.427 & 0.864 & 0.638 & 0.500 & 0.671 & 0.707 \\
+Naive Bayes         & 0.510 & 0.955 & 0.777 & 0.711 & 0.792 & 0.879 \\
+Random Forest       & 0.633 & 0.871 & 0.788 & 0.708 & 0.821 & 0.846 \\
+Gradient Boosting   & 0.671 & 0.913 & 0.796 & 0.757 & 0.775 & 0.856 \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+\subsection{Comparação com Trabalhos Relacionados}
+
+Considerando os resultados obtidos, foi realizada uma comparação com os trabalhos relacionados apresentados na seção 2. A Tabela \ref{tab:resumo_metrica} apresenta um resumo das métricas de desempenho dos modelos utilizados em outros trabalhos.
+
+\begin{table}[ht]
+\centering
+\caption{Resumo das métricas por modelo de outros trabalhos}
+\label{tab:resumo_metrica}
+\begin{tabular}{lccc}
+\hline
+\textbf{Modelo} & \textbf{Mínimo} & \textbf{Médio} & \textbf{Máximo} \\
+\hline
+Gradient Boosting & 72.38 & 81.57 & 89.74 \\
+SVM               & 55.26 & 65.78 & 76.31 \\
+Random Forest     & 71.05 & 80.26 & 88.15 \\
+Logistic Regression & 72.36 & 81.75 & 89.47 \\
+\hline
+\end{tabular}
+\end{table}
+
+
+No trabalho de Zriqat et al. \cite{zriqat2017comparative}, o modelo de árvore de decisão (DT), obteve uma acurácia de 98.15\%, superando os resultados apresentados em outros trabalhos. A Tabela \ref{tab:performance_classificadores} apresenta as medidas de performance dos classificadores utilizados no estudo.
+
+
+
+\begin{table}[ht]
+\centering
+\caption{Medidas de Performance dos Classificadores}
+\label{tab:performance_classificadores}
+\begin{tabular}{lccccc}
+\hline
+\textbf{Métrica} & \textbf{DT } & \textbf{Naïve Bayes} & \textbf{Discriminant} & \textbf{RF} & \textbf{SVM} \\
+\hline
+Acurácia     & 0.9815 & 0.8037 & 0.8259 & 0.9148 & 0.7556 \\
+Especificidade & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
+Precisão     & 0.9815 & 0.8037 & 0.8259 & 0.9148 & 0.7556 \\
+Sensibilidade & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 1.0000 \\
+F-medida     & 0.9907 & 0.8912 & 0.9047 & 0.9556 & 0.8608 \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
 
 \section{Conclusão}
 Publicação: Os trabalhos devem ser disponibilizados na
@@ -322,59 +473,12 @@ num      & Categórica binária (alvo) & Diagnóstico de doença cardíaca. &
 \end{sidewaystable}
 
 
-\begin{table}[ht]
-\centering
-\caption{Acurácia para classificadores para kfold = 10}
-\label{tab:resumo_classificadores}
-\begin{tabular}{lccccccc}
-\hline
-Modelo & Min & Max & Média & Q1 & Q2 & Q3 \\
-\hline
-Logistic Regression & 0.667 & 1.000 & 0.846 & 0.800 & 0.851 & 0.893 \\
-Decision Tree       & 0.542 & 0.870 & 0.728 & 0.688 & 0.729 & 0.776 \\
-SVM                 & 0.583 & 0.708 & 0.654 & 0.625 & 0.660 & 0.694 \\
-KNN                 & 0.417 & 0.875 & 0.642 & 0.583 & 0.661 & 0.695 \\
-Naive Bayes         & 0.500 & 0.957 & 0.747 & 0.729 & 0.769 & 0.838 \\
-Random Forest       & 0.583 & 0.870 & 0.763 & 0.729 & 0.787 & 0.828 \\
-Gradient Boosting   & 0.667 & 0.913 & 0.798 & 0.758 & 0.809 & 0.865 \\
-\hline
-\end{tabular}
-\end{table}
 
 
-\begin{table}[ht]
-\centering
-\caption{Resumo das métricas por modelo de outros trabalhos}
-\label{tab:resumo_metrica}
-\begin{tabular}{lccc}
-\hline
-\textbf{Modelo} & \textbf{Mínimo} & \textbf{Médio} & \textbf{Máximo} \\
-\hline
-Gradient Boosting & 72.38 & 81.57 & 89.74 \\
-SVM               & 55.26 & 65.78 & 76.31 \\
-Random Forest     & 71.05 & 80.26 & 88.15 \\
-Logistic Regression & 72.36 & 81.75 & 89.47 \\
-\hline
-\end{tabular}
-\end{table}
 
 
-\begin{table}[ht]
-\centering
-\caption{Medidas de performance por Modelo}
-\label{tab:performance_measures}
-\begin{tabular}{lccccc}
-\hline
-\textbf{Métrica} & \textbf{Discriminant} & \textbf{SVM} & \textbf{Tree} & \textbf{Bayes} & \textbf{Forest} \\
-\hline
-Accuracy   & 0.9901 & 0.7888 & 0.8350 & 0.9340 & 0.7657 \\
-Specificity & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
-Precision  & 0.9901 & 0.7888 & 0.8350 & 0.9340 & 0.7657 \\
-Recall     & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 1.0000 \\
-F-measure  & 0.9950 & 0.8819 & 0.9101 & 0.9659 & 0.8673 \\
-\hline
-\end{tabular}
-\end{table}
+
+
 
 
 
