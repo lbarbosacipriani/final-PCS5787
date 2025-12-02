@@ -41,7 +41,7 @@ T.~Li, A.~K. Sahu, A.~Talwalkar, and V.~Smith, ``Federated learning for healthca
 V.~Regitz-Zagrosek and C.~Gebhard, ``Gender medicine: effects of sex and gender on cardiovascular disease manifestation and outcomes,'' \emph{Nature Reviews Cardiology}, vol.~20, no.~4, pp. 236--247, 2023.
 
 \bibitem{heartdiseases}
-S.~W. P.~M. Janosi, Andras and R.~Detrano, ``{Heart Disease},'' UCI Machine Learning Repository, 1989, {DOI}: https://doi.org/10.24432/C52P4X.
+S.~W.~P. Janosi, Andras, ``{Heart Disease},'' UCI Machine Learning Repository, 1989, {DOI}: https://doi.org/10.24432/C52P4X.
 
 \bibitem{physionet}
 A.~L. Goldberger, L.~A.~N. Amaral, L.~Glass, J.~M. Hausdorff, P.~C. Ivanov, R.~G. Mark, J.~E. Mietus, G.~B. Moody, C.-K. Peng, and H.~E. Stanley, ``{PhysioBank, PhysioToolkit, and PhysioNet: Components of a New Research Resource for Complex Physiologic Signals},'' Circulation 101(23):e215--e220, 2000, \url{https://physionet.org/about/database/}.
