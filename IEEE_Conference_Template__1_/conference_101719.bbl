@@ -29,18 +29,26 @@ M.~Di~Cesare, H.~Bixby, T.~Gaziano, L.~Hadeed, C.~Kabudula, D.~V. McGhie, J.~Mwa
 \bibitem{detrano1989international}
 R.~Detrano, A.~Janosi, and Steinbrunn, ``International application of a new probability algorithm for the diagnosis of coronary artery disease,'' \emph{The American journal of cardiology}, vol.~64, no.~5, pp. 304--310, 1989.
 
-\bibitem{heartdiseases}
-S.~W. P.~M. Janosi, Andras and R.~Detrano, ``{Heart Disease},'' UCI Machine Learning Repository, 1989, {DOI}: https://doi.org/10.24432/C52P4X.
+\bibitem{a17020078}
+\BIBentryALTinterwordspacing
+M.~A. Naser, A.~A. Majeed, M.~Alsabah, T.~R. Al-Shaikhli, and K.~M. Kaky, ``A review of machine learning’s role in cardiovascular disease prediction: Recent advances and future challenges,'' \emph{Algorithms}, vol.~17, no.~2, 2024. [Online]. Available: \url{https://www.mdpi.com/1999-4893/17/2/78}
+\BIBentrySTDinterwordspacing
+
+\bibitem{li2020federated}
+T.~Li, A.~K. Sahu, A.~Talwalkar, and V.~Smith, ``Federated learning for healthcare informatics,'' \emph{arXiv preprint arXiv:2003.08119}, 2020.
 
 \bibitem{regitz2023gender}
 V.~Regitz-Zagrosek and C.~Gebhard, ``Gender medicine: effects of sex and gender on cardiovascular disease manifestation and outcomes,'' \emph{Nature Reviews Cardiology}, vol.~20, no.~4, pp. 236--247, 2023.
+
+\bibitem{heartdiseases}
+S.~W. P.~M. Janosi, Andras and R.~Detrano, ``{Heart Disease},'' UCI Machine Learning Repository, 1989, {DOI}: https://doi.org/10.24432/C52P4X.
+
+\bibitem{physionet}
+A.~L. Goldberger, L.~A.~N. Amaral, L.~Glass, J.~M. Hausdorff, P.~C. Ivanov, R.~G. Mark, J.~E. Mietus, G.~B. Moody, C.-K. Peng, and H.~E. Stanley, ``{PhysioBank, PhysioToolkit, and PhysioNet: Components of a New Research Resource for Complex Physiologic Signals},'' Circulation 101(23):e215--e220, 2000, \url{https://physionet.org/about/database/}.
 
 \bibitem{goldman1960principles}
 \BIBentryALTinterwordspacing
 M.~Goldman, \emph{Principles of Clinical Electrocardiography}.\hskip 1em plus 0.5em minus 0.4em\relax Lange Medical Publications, 1960, no. v. 1960. [Online]. Available: \url{https://books.google.com.br/books?id=FgFiU2zq7FYC}
 \BIBentrySTDinterwordspacing
-
-\bibitem{zriqat2017comparative}
-I.~A. Zriqat, A.~M. Altamimi, and M.~Azzeh, ``A comparative study for predicting heart diseases using data mining classification methods,'' \emph{arXiv preprint arXiv:1704.02799}, 2017.
 
 \end{thebibliography}

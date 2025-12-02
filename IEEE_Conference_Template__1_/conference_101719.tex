@@ -16,29 +16,28 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Análise de desempenho de modelos de Aprendizado de máquina na base de dados Heart Disease*\\
-{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
-should not be used}
+\title{Análise de desempenho de modelos de Aprendizado de máquina na base de dados Heart Disease
 }
 
 \author{\IEEEauthorblockN{Cipriani Leonardo}
 \IEEEauthorblockA{\textit{Universidade de Sao Paulo} \\
 \textit{Escola Politécnica}\\
 São Paulo, Brasil \\
-email address or ORCID}
+https://orcid.org/0009-0009-5522-3408}
 \and
 \and
 \IEEEauthorblockN{Rampim Thiago}
 \IEEEauthorblockA{\textit{Universidade de Sao Paulo} \\
 \textit{Escola Politécnica}\\
 São Paulo, Brasil \\
-email address or ORCID}
+https://orcid.org/0009-0002-8710-3880}
 }
 
 \maketitle
 
 \begin{abstract}
 
+Doenças coronarianas são uma das principais causas de morte ao redor do mundo. Por esse motivo, a comunidade científica se debruça sobre as causas, consequências e diagnósticos dessas doenças. Com a evolução de métodos computancionais, o desenvolvimento e pesquisa de ferramentas que pudessem auxiliar no diagnóstico dessas doenças aumentou significativamente com o passar dos anos. Atualmente, técnicas de inteligência artificial estão sendo aplicadas na classificação de doencas coronarianas agudas, como o infarto do miocárdio. Este trabalho tem como objetivo analisar a relação entre fatores de risco e a presença de doenças cardíacas, além de avaliar o desempenho de diversos modelos de aprendizado de máquina na classificação dessas doenças utilizando a base de dados UCI Heart Disease. Foram utilizados modelos como Regressão Logística, Árvore de Decisão, SVM, KNN, Naive Bayes, Random Forest e Gradient Boosting. Os resultados obtidos foram comparados com trabalhos relacionados, destacando as métricas de acurácia e sensibilidade. Os resultados indicam que os modelos de aprendizado de máquina podem ser eficazes na identificação de doenças cardíacas, contribuindo para o avanço das ferramentas de diagnóstico na área da saúde. 
 
 \end{abstract}
 
@@ -54,6 +53,18 @@ O objetivo desse estudo é analisar a relação entre os fatores de risco associ
 Será utilizado o conjunto de dados de doenças cardíacas, e realizada a avaliação de desempenho com trabalhos relacionados \cite{detrano1989international}.
 
 \section{Trabalhos Relacionados}
+
+O trabalho de Detrano et al. \cite{detrano1989international}, apresenta a base de dados utilizada nesse estudo. O conjunto de dados foi coletado em 4 hospitais diferentes, sendo eles: Cleveland Clinic Foundation (CCF), Hungarian Institute of Cardiology, University Hospital Zurich (Switzerland) e Veterans Administration Medical Center (Long Beach, California). O qual deu origem a base de dados UCI Heart Disease, amplamente utilizada em estudos relacionados a doenças cardíacas. O algoritmo proposto foi baseado em uma rede bayesiana, obtendo uma especificidade de 85\% para a base de dados de Cleveland.
+
+
+Já o trabalho de Naser et al. \cite{a17020078}, apresenta uma comparação entre diversos modelos de aprendizado de máquina para a identificação de doenças cardíacas. Foram utilizados os modelos de Regressão Logística, SVM, Random Forest e Gradient Boosting. O modelo de Gradient Boosting obteve o melhor desempenho, com uma acurácia média de 81.57\%.
+
+
+O trabalho de Li, et al. \cite{li2020federated}, propõe um modelo híbrido baseado em Random Forest e XGBoost para a identificação de doenças cardíacas. O modelo proposto obteve uma acurácia de 89.74\%, superando os resultados apresentados em outros trabalhos relacionados.
+
+Diversas outras técnicas e trabalhos foram desenvolvidos na área, devido a grande aplicabilidade e importância do tema. 
+
+Além da criação e comapração de modelos, outros trabalhos focam na análise dos fatores de risco associados à presença de doenças cardíacas. O trabalho de Regitz-Zagrosek et al. \cite{regitz2023gender}, destaca a importância de considerar o sexo biológico como um fator de risco para doenças cardíacas, evidenciando diferenças na prevalência e apresentação clínica entre homens e mulheres.
 
 
 \section{Base de dados}
@@ -88,6 +99,8 @@ As outras bases contém muitos dados faltantes, o que prejudicaria a confirmaç�
 
 Para a utilização adequada, seguindo os preceitos do ciclo de vida de dados, foram definidos o armazenamento e acesso conforme as seções a seguir. 
 
+
+Outras fontes de dados podem ser encontrados na PhysioNet, que contempla diversos conjuntos de dados relacionados a saúde \cite{physionet}.
 \subsection{Armazenamento e Segurança}
 O armazenamento dos dados foi feito utilizando a solução AWS S3, que fornece um repositório de objetos. Através dessa ferramenta, define-se políticas de ciclo de vida e de privacidade dos dados. 
 
@@ -316,7 +329,6 @@ Logistic Regression & 72.36 & 81.75 & 89.47 \\
 \end{table}
 
 
-No trabalho de Zriqat et al. \cite{zriqat2017comparative}, o modelo de árvore de decisão (DT), obteve uma acurácia de 98.15\%, superando os resultados apresentados em outros trabalhos. A Tabela \ref{tab:performance_classificadores} apresenta as medidas de performance dos classificadores utilizados no estudo.
 
 
 
@@ -326,13 +338,13 @@ No trabalho de Zriqat et al. \cite{zriqat2017comparative}, o modelo de árvore d
 \label{tab:performance_classificadores}
 \begin{tabular}{lccccc}
 \hline
-\textbf{Métrica} & \textbf{DT } & \textbf{Naïve Bayes} & \textbf{Discriminant} & \textbf{RF} & \textbf{SVM} \\
+\textbf{Métrica} & \textbf{DT } & \textbf{Naïve Bayes} & \textbf{RF} & \textbf{SVM} \\
 \hline
-Acurácia     & 0.9815 & 0.8037 & 0.8259 & 0.9148 & 0.7556 \\
-Especificidade & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.0000 \\
-Precisão     & 0.9815 & 0.8037 & 0.8259 & 0.9148 & 0.7556 \\
-Sensibilidade & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 1.0000 \\
-F-medida     & 0.9907 & 0.8912 & 0.9047 & 0.9556 & 0.8608 \\
+Acurácia     & 0.9815 & 0.8037  & 0.9148 & 0.7556 \\
+Especificidade & 0.0000 & 0.0000  & 0.0000 & 0.0000 \\
+Precisão     & 0.9815 & 0.8037  & 0.9148 & 0.7556 \\
+Sensibilidade & 1.0000 & 1.0000 & 1.0000 & 1.0000 \\
+F-medida     & 0.9907 & 0.8912  & 0.9556 & 0.8608 \\
 \hline
 \end{tabular}
 \end{table}
@@ -341,14 +353,17 @@ F-medida     & 0.9907 & 0.8912 & 0.9047 & 0.9556 & 0.8608 \\
 
 
 \section{Conclusão}
-Publicação: Os trabalhos devem ser disponibilizados na
-comunidade - Big Data Analytics Research Group of Escola
-Politécnica da Universidade de São Paulo - Zenodo (zenodo.org).
-
-This document is a model and instructions for \LaTeX.
-Please observe the conference page limits. 
 
 
+Considerando a análise exploratória dos dados e a avaliação dos modelos de aprendizado de máquina, conclui-se que os modelos desenvolvidos apresentam um desempenho competitivo na identificação de doenças cardíacas, com destaque para o modelo de Regressão Logística, que obteve a maior acurácia média entre os modelos testados.
+
+A característica de idade avançada, sugere uma relação positiva com a presença de doenças cardíacas, corroborando com estudos epidemiológicos existentes. Além disso, o sexo biológico masculino mostrou-se mais prevalente entre os pacientes com doenças cardíacas.
+
+Uma frequência cardíaca máxima reduzida também foi associada à presença de doenças cardíacas, indicando que essa variável pode ser um indicador relevante para a avaliação do risco cardiovascular.
+
+Além desses critérios, a análise do tipo de dor torácica como indicador de doenças cardíacas revelou que pacientes assintomáticos ainda podem apresentar condições cardíacas, ressaltando a importância de avaliações clínicas complementares.
+
+A análise do resultado do ECG de repouso indicou que alterações no segmento ST-T estão associadas a doenças cardíacas, alinhando-se com a literatura médica existente. O que dificulta a implementação de sistemas automatizados de diagnóstico, devido a complexidade e demora na análise do ECG, bem como a necessidade de validação clínica rigorosa antes da classificação automatizada.
 
 \bibliographystyle{IEEEtran}
 \bibliography{ref.bib}
